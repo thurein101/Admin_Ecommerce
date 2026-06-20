@@ -44,9 +44,9 @@ export function Footer() {
         {/* Contact Info */}
         <div className="space-y-4 text-sm text-gray-500">
           <h4 className="font-semibold text-gray-900">Get In Touch</h4>
-          <div className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Yangon, Myanmar</div>
-          <div className="flex items-center gap-2"><Phone className="h-4 w-4" /> +95 9 123 456 789</div>
-          <div className="flex items-center gap-2"><Mail className="h-4 w-4" /> contact@yourstore.com</div>
+          <div className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Pyay, Myanmar</div>
+          <div className="flex items-center gap-2"><Phone className="h-4 w-4" /> +959 689 686 153</div>
+          <div className="flex items-center gap-2"><Mail className="h-4 w-4" /> kothu@gmaill.com</div>
         </div>
       </div>
 
@@ -58,11 +58,11 @@ export function Footer() {
         <div className="mt-4 md:mt-0">
           Built by{" "}
           <Link 
-            href="https://your-portfolio-link.com" 
+            href="https://thurein-portfolio-nplg.vercel.app/" 
             target="_blank" 
             className="text-gray-900 font-semibold hover:underline"
           >
-            Your Name/Agency
+            Thurein MyoMin
           </Link>
         </div>
       </div>
