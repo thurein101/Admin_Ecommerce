@@ -53,13 +53,15 @@ export const auth = betterAuth({
       },
     },
   },
-  session: {
-    cookieCache: {
-      enabled: false,
-      maxAge: 5 * 60, // 5 minutes
-    },
+ session: {
+    cookieCache: { enabled: true, maxAge: 5 * 60 },
   },
-  trustedOrigins: ["https://thushop.vercel.app/"], 
+  // အရေးကြီးဆုံးက ဒါပါပဲ
+  cookie: {
+    secure: true, // Vercel မှာ https သုံးတဲ့အတွက် true ဖြစ်ရမယ်
+    sameSite: "lax", // ဒါက domain ပြောင်းရင် cookie လွတ်သွားတာကို ကာကွယ်ပေးတယ်
+  },
+  trustedOrigins: ["https://thushop.vercel.app/"],
 }
   
 );
