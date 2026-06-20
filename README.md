@@ -34,3 +34,25 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+NextShop Admin Dashboard
+A high-performance, modern Admin Dashboard built with Next.js 16 (App Router), Tailwind CSS, and Prisma. Features a secure authentication system powered by Better Auth, responsive design for both desktop and mobile, and real-time inventory management.
+
+Key Features
+Modern Tech Stack: Next.js 16, TypeScript, Tailwind CSS.
+
+Secure Auth: Better Auth implementation with role-based access control.
+
+Responsive UI: Adaptive sidebar and mobile-friendly navigation.
+
+Inventory Management: CRUD operations for products with search and filtering.
+
+Sales Insights: Order tracking and financial metrics overview.
+
+Getting Started
+Prerequisites
+Node.js 18.x or higher
+
+npm or pnpm
+
+PostgreSQL (or your preferred database)
