@@ -29,6 +29,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  serverExternalPackages: ['@prisma/client', '@prisma/adapter-neon'],
 
 };
 
