@@ -53,4 +53,14 @@ export const auth = betterAuth({
       },
     },
   },
-});
+  session: {
+    cookieCache: {
+      enabled: true,
+      maxAge: 5 * 60, // 5 minutes
+    },
+  },
+  // ဒါက အရမ်းအရေးကြီးပါတယ်
+  trustedOrigins: ["https://thushop.vercel.app/"], 
+}
+  
+);
