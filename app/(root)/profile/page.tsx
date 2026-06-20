@@ -35,7 +35,7 @@ export default async function ProfilePage() {
   orderBy: { createdAt: "desc" },
 });
 
-  if (!dbUser) redirect("/login");
+ 
 
   return (
     <div className="min-h-screen w-full bg-gray-50/50">
