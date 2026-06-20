@@ -29,10 +29,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Build လုပ်တဲ့အချိန် ESLint Error ရှိနေရင်တောင် ဆက်လုပ်ပေးအောင်လုပ်ခြင်း
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+
 };
 
 export default nextConfig;
