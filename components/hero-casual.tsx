@@ -3,6 +3,7 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useEffect } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 
@@ -34,7 +35,13 @@ const slides = [
     },
   ];
   return (
-    <div className="relative  h-[350px] overflow-hidden bg-gray-100 shadow-2xl mt-2.5 rounded-3xl"  ref={emblaRef}>
+      <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+        >
+             <div className="relative  h-[350px] overflow-hidden bg-gray-100 shadow-2xl mt-2.5 rounded-3xl"  ref={emblaRef}>
       <div className="flex h-full">
         {slides.map((slide, index) => (
           <div key={index} className="flex-[0_0_100%] relative h-full" >
@@ -70,5 +77,7 @@ const slides = [
         ))}
       </div>
     </div>
+        </motion.div>
+   
   );
 }
