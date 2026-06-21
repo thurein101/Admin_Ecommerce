@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { router } from "better-auth/api";
+import { Logo } from "../Logo";
 
 export function AdminSidebar() {
   const pathname = usePathname();
@@ -31,9 +32,7 @@ export function AdminSidebar() {
     <div className="w-64 h-screen bg-white text-gray-900 flex flex-col justify-between border-r border-gray-200">
       <div className="flex flex-col pt-6">
         <div className="px-6 pb-6 border-b border-gray-100">
-          <h1 className="text-xl font-bold text-black tracking-tight">
-            NEXTSHOP
-          </h1>
+         <Logo/>
           <p className="text-[11px] font-medium text-gray-400 uppercase tracking-widest mt-1">
             Admin Panel
           </p>

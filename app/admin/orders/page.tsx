@@ -6,6 +6,7 @@ import Link from "next/link"
 import { archiveDailyOrdersAction } from "@/lib/actions/order";
 import { Button } from "@/components/ui/button";
 import { ClearOrdersButton } from "@/components/admin/clearOrderBtn";
+export const dynamic = 'force-dynamic';
 
 export default async function AdminOrdersPage() {
   await checkAdmin();

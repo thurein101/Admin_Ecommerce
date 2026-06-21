@@ -27,6 +27,7 @@ import {
 import { usePathname, useRouter } from "next/navigation";
 import { Input } from "./ui/input";
 import { cn } from "@/lib/utils";
+import { Logo } from "./Logo";
 
 export function Navbar() {
   const { data: session } = useSession();
@@ -48,11 +49,8 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* ၁။ ဘယ်ဘက်ခြမ်း: BRAND LOGO */}
-        <Link
-          href="/"
-          className="text-xl font-bold tracking-tight text-gray-900 hover:opacity-80"
-        >
-          NEXT<span className="text-primary">SHOP</span>
+       <Link href="/" className="hover:opacity-80 transition-opacity">
+          <Logo />
         </Link>
 
         {/* ၂။ အလယ်ပိုင်း: NAV LINKS */}

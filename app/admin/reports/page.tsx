@@ -1,6 +1,7 @@
 import { prisma } from "@/lib/prisma";
 import { Card } from "@/components/ui/card";
 
+export const dynamic = 'force-dynamic';
 export default async function ArchiveReportsPage() {
   // Archive ဖြစ်ပြီးသား Order အားလုံးကို ဆွဲထုတ်
   const archivedOrders = await prisma.order.findMany({

@@ -139,16 +139,23 @@ export async function hideOrderHistoryAction() {
 }
 
 
-export async function archiveDailyOrdersAction(date: Date) {
-  const startOfDay = new Date(date.setHours(0,0,0,0));
-  const endOfDay = new Date(date.setHours(23,59,59,999));
 
+
+export async function archiveDailyOrdersAction() {
+  // ဒီနေ့ အချိန်ကို ယူပါ
+  const now = new Date();
+  const startOfDay = new Date(now.setHours(0, 0, 0, 0));
+  const endOfDay = new Date(now.setHours(23, 59, 59, 999));
+
+  // Database ထဲမှာ update လုပ်ပါ
   await prisma.order.updateMany({
     where: {
       createdAt: { gte: startOfDay, lte: endOfDay },
-      isArchived: false
+      isArchived: false, // မ Archive ရသေးတဲ့ဟာတွေကိုပဲ ရှာမယ်
     },
-    data: { isArchived: true }
+    data: { isArchived: true },
   });
+
   revalidatePath("/admin/orders");
+  revalidatePath("/admin/reports");
 }
