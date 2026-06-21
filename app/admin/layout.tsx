@@ -1,4 +1,5 @@
 import { AdminSidebar } from "@/components/admin/admin-sidebar";
+import { Logo } from "@/components/Logo";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 
@@ -20,7 +21,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <AdminSidebar />
           </SheetContent>
         </Sheet>
-        <span className="ml-4 font-bold">NEXTSHOP Admin</span>
+       <Logo/> Admin
       </div>
 
       {/* 3. Main Content */}

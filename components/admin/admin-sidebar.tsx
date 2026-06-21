@@ -61,7 +61,7 @@ export function AdminSidebar() {
       </div>
 
       {/* iOS Style Profile Card */}
-      <div className="p-4 border-t border-gray-100 bg-gray-50/50 space-y-4">
+      <div className="p-4 border-t border-gray-100 bg-gray-50/50 space-y-4 mb-12">
         {session?.user && (
           <div className="flex items-center gap-3 px-1">
             <div className="h-9 w-9 rounded-full relative overflow-hidden bg-gray-200 flex items-center justify-center flex-shrink-0">
